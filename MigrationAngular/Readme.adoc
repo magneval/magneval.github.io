@@ -1,11 +1,47 @@
 = Angular 101 ou 1TO2
 
-= Angular JS 1
+== Angular JS 1
 
-AngularJs est basé sur 3 grands briques :
-# Les services,
-# Les controlleurs
-# Les templates
-# Les directives
+.AngularJs est basé sur 3 grands briques :
+[%step]
+. Les services,
+. Les controlleurs
+. Les templates
+. Les directives
 
+[NOTE.speaker]
+--
+mal de mer ?
+--
+
+== Angular JS 1
+
+.AngularJs est basé sur 3 grands briques :
+["plantuml", "sample4.png", "png"]
+---------------------------------------------------------------------
+User -> (Start)
+User --> (Use the application) : Polish label-Zażółć gęślą jaźń
+
+:Main Admin: ---> (Use the application) : This is\nyet another\nlabel
+---------------------------------------------------------------------
+
+== Angular JS 1 (suite)
+
+.AngularJs s'appuye sur plusieurs concepts
+[%step]
+. JqLite
+. Les modules
+. L'injection de dépendence
+. Les scopes
+
+[NOTE.speaker]
+--
+Don't forget $scope and jqLite
+--
+
+
+
+== Angular JS 2
+
+RIP Angular 1
 
