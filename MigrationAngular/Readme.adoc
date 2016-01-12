@@ -1,1 +1,11 @@
 = Angular 101 ou 1TO2
+
+= Angular JS 1
+
+AngularJs est basé sur 3 grands briques :
+# Les services,
+# Les controlleurs
+# Les templates
+# Les directives
+
+
