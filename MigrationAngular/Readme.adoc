@@ -1,29 +1,61 @@
+:revealjs_mouseWheel: true
 = Angular 101 ou 1TO2
 
 == Angular JS 1
 
-.AngularJs est basé sur 3 grands briques :
+.AngularJs est basé sur 6 grandes briques :
 [%step]
+. L'application (module)
 . Les services,
 . Les controlleurs
 . Les templates
 . Les directives
+. Les filtres
 
 [NOTE.speaker]
 --
-mal de mer ?
+Module est le point d'entré de l'application
+Service permet de fournir un service au controlleurs
+Controlleur 
 --
 
 == Angular JS 1
 
-.AngularJs est basé sur 3 grands briques :
-["plantuml", "sample4.png", "png"]
----------------------------------------------------------------------
-User -> (Start)
-User --> (Use the application) : Polish label-Zażółć gęślą jaźń
+.AngularJs est basé sur 6 grands briques :
+[plantuml, diagram-classes, svg]     
+----
+'skinparam backgroundcolor white
+skinparam class {
+'	BackgroundColor PaleGreen
+'	ArrowColor SeaGreen
+	ArrowColor PaleGreen
+	BorderColor SpringGreen
+	TextColor SeaGreen
+}
 
-:Main Admin: ---> (Use the application) : This is\nyet another\nlabel
----------------------------------------------------------------------
+class Module
+class Service <<Model>>
+class Controlleur <<Controller>>
+class Template <<View>>
+class Directive
+class Filter
+
+Module "1" *-> Service
+Module "1" *--> Controlleur
+Module "1" *--> Directive
+Controlleur o-- Service
+' Controlleur o-- Template
+Directive "0,1" --* Directive : parent
+Controlleur "0,1" --* Directive
+Template "0,1" --* Directive
+Template o-- Directive
+Template o-left- Controlleur
+Template o-right- Filter
+----
+
+[NOTE.speaker]
+--
+--
 
 == Angular JS 1 (suite)
 
@@ -44,4 +76,8 @@ Don't forget $scope and jqLite
 == Angular JS 2
 
 RIP Angular 1
+
+[NOTE.speaker]
+--
+--
 
