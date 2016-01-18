@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Charles de MAGNEVAL">
+<title>slides
+</title>
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport">
+<script src="bower_components/asciidoctor.js/dist/asciidoctor-all.min.js"></script>
+<!--
+<script src="bower_components/asciidoctor.js/dist/asciidoctor-extensions.min.js"></script>
+-->
+</head>
+<body>
+<div id="content" >
+</div>
+<script >
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+	if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+
+		var content = "http://asciidoctor.org[*Asciidoctor*] " +
+		    "running on http://opalrb.org[_Opal_] " +
+		    "brings AsciiDoc to the browser!";
+		var options = Opal.hash({doctype: 'inline', attributes: ['showtitle']});
+		var html = Opal.Asciidoctor.$convert(content, options); (1)
+		//console.log(html); (2)
+		var content = document.getElementById("content");
+		content.innerHTML=html;
+	}
+}
+xhr.open("GET", "MigrationAngular/Readme.adoc", true);
+xhr.send(null);
+</script>
+</body>
+</html>
+
+
