@@ -1,0 +1,58 @@
+<div class="hero-unit">
+    <h1>{{hello}}</h1>
+</div>
+
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>encours</th>
+            <th></th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="framework in frameworks" ng-click="edit(framework)">
+            <td>{{framework.name}}</td>
+            <td>{{framework.encours}}</td>
+            <td><button class="btn btn-danger" ng-click="delete(framework, $index, $event)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<button class="btn" ng-click="edit({})">Add</button>
+
+
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 ng-show="framework._id">Edit</h3>
+                <h3 ng-hide="framework._id">Create</h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input ng-readonly="framework._id" type="text" ng-model="framework.name"/>
+                </div>
+                <div class="form-group">
+                    <label>encours</label>
+                    <input type="text" ng-model="framework.encours"/>
+                </div>
+                <div class="form-group">
+                    <label>comment</label>
+                    <input type="text" ng-model="framework.comment"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button ng-hide="framework.id" class="btn btn-primary" ng-click="save()">Save</button>
+                <button ng-show="framework.id" class="btn btn-primary" ng-click="save()">Update</button>
+                <button ng-show="framework.id" class="btn btn-default" ng-click="clear()">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

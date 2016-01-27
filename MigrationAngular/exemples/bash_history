@@ -1,0 +1,8 @@
+bower install
+npm install -g  gulp
+cd styles/              
+ln -s ../Angular1/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/ bootstrap
+ln -s ../Angular1/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss compass_twitter_bootstrap.scss
+cd ..
+gulp
+
