@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-09-11T15:41:13+02:00
+
+====== APIs ======
+* classlist
+[http://html5demos.com/classlist]
+* dataset
+[http://html5demos.com/dataset]
+* history
+[http://html5demos.com/history]
+* canvas
+** 2D
+** 3D
+[http://dev.opera.com/articles/view/an-introduction-to-webgl/]
+* geolocalisation
+http://www.html5-css3.fr/wp-content/uploads/2011/01/barre-autorisation-partage-g%C3%A9olocalisation.png
+* application offline
+[http://html5demos.com/offline]
+[http://html5demos.com/storage]
+** local Storage
+ localStorage.setItem("name", "John");     
+ alert(localStorage.getItem("name"));
+** session Storage
+** SQL Storage
+** application cache
+[http://html5demos.com/offlineapp]
+* Les Web Sockets
+[http://html5demos.com/web-socket]
+* La webcam
+[http://auduno.github.com/headtrackr/examples/targets.html]
+* accelerometre
+** deviceorientation
+** devicemotion
+* DragNDrop
+[http://html5demos.com/dnd-upload]
+[http://html5demos.com/drag]
+[http://html5demos.com/drag-anything]
+* FileReader
+[http://html5demos.com/file-api-simple]
+* postMessage
+* worker

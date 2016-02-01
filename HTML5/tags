@@ -1,0 +1,65 @@
+% Pandoc User's Guide
+% John MacFarlane
+% January 19, 2013
+= tags
+
+* Le doctype est simplifié :
+  <!DOCTYPE html>
+* organisatin du flux :
+** section
+** aside
+** nav
+** article
+** header
+** footer
+** figure
+** img
+** figcaption
+http://www.alsacreations.com/xmedia/tuto/exemples/html5/html5div.gif
+
+* nouvelles balises
+** <embed>
+** <mark>
+** <meter>
+** <progress>
+** <time>
+** <command>
+** <details>
+** <datalist>
+** <keygen>
+** <bb>
+** <output>
+** <ruby> (Text asiatique)
+** <datatemplate>
+** <rule>
+** <nest>
+** <summary>
+** <details>
+* évolution des formulaires
+** datetime
+** datetime-local
+** date
+** month 
+** week
+** time
+** number
+** tel http://www.html5-css3.fr/wp-content/uploads/2011/01/html5-form-iphone-tel.png ou http://www.html5-css3.fr/wp-content/uploads/2011/01/html5-form-android-number.png
+** range
+** email
+** url http://www.html5-css3.fr/wp-content/uploads/2011/01/html5-form-iphone-url.png
+** search
+** color
+* attributs
+** draggable
+ <li draggable="true">Element de ma liste</li>
+ <div ondrop="drop(this, event)">
+** contenteditable
+[http://html5demos.com/contenteditable]
+** spellcheck
+** microformat
+** microdata
+** datas
+* Multimedia
+** audio
+** video
+* canvas http://www.alsacreations.com/xmedia/tuto/exemples/html5/html5canvas.jpg

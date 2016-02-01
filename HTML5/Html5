@@ -1,0 +1,294 @@
+% HTML5
+% SII 
+% Charles de MAGNEVAL  <CdeMagneval@sii.fr>
+
+#Plan
+  
+  * HTML5 label marketing ou vraie évolution ?
+  * les nouvelles balises de l'HTML5
+  * Les évolutions de CSS3
+  * Les évolutions de Javascript lié a HTML5
+  * Le point sur le support d' HTML5 par les différents navigateurs
+  * Question réponse
+
+# HTML5 label marketing ou vraie évolution ?
+  
+  + Le marketing :
+      de WHATWG a  ![](http://www.alsacreations.com/xmedia/doc/medium/html5-logo.png "HTML5")
+  
+  + Le doctype est simplifié :
+      ````<!DOCTYPE html>````
+  + L'évolution dans les 3 facettes d'HTML5
+      * [les balises HTML](http://dev.w3.org/html5/html4-differences/)
+      * le CSS3
+      * les API JavaScripts
+
+# les nouvelles balises de l'HTML5
+  
+  + ![](contenthtml5.png "HTML5")
+
+# les nouvelles balises de l'HTML5
+  + ![](http://www.alsacreations.com/xmedia/tuto/exemples/html5/html5div.gif "HTML5")
+
+# les nouvelles balises de l'HTML5
+## organisation du flux :
+  + section
+  + aside
+  + nav
+  + article
+  + header
+  + footer
+  + figure
+  + img
+  + figcaption
+
+
+# les nouvelles balises de l'HTML5
+## [nouvelles balises](http://www.w3schools.com/tags/)
+
+  + svg et math
+  + mark (mise en exidence)
+  + meter et progress
+  + time
+  + menu et command
+  + details
+  + ruby (Text asiatique)
+  + summary
+  + details
+
+# évolution des formulaires
+## date
+  + datetime
+  + datetime-local
+  + date
+  + month
+  + week
+  + time
+
+# évolution des formulaires
+## tel 
+
+  +![](http://www.html5-css3.fr/wp-content/uploads/2011/01/html5-form-iphone-tel.png) ou ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/html5-form-android-number.png)
+
+# évolution des formulaires
+  + url ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/html5-form-iphone-url.png)
+
+# évolution des formulaires
+  + datalist
+  + number
+  + range
+  + email
+  + search
+  + keygen
+  + output
+  + color
+
+# attributs
+  
+  + form
+  + required
+  + draggable et dropzone
+      * ````<li draggable="true">Element de ma liste</li>````
+      *  ```` <div ondrop="drop(this, event)">````
+  + [contenteditable](http://html5demos.com/contenteditable)
+  + spellcheck
+  + microformat
+  + microdata
+  + datas
+
+# Multimedia
+  
+  + audio
+  + video
+  + canvas ![](http://www.alsacreations.com/xmedia/tuto/exemples/html5/html5canvas.jpg)
+  + WebGL
+
+# Les évolutions de CSS3
+
+  * [color-transition](http://dev.opera.com/static/dstorey/transitions/color-transition.html)
+  
+  * [image-gallery](http://devfiles.myopera.com/articles/1041/image-gallery.html)
+
+# Les effets visuels
+
+  * Les bordures arrondies
+  * box-shadow
+  * text-shadow
+  ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-text-shadow.jpg)
+  * opacity
+  ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-opacity1.png)
+  * transition
+  ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-transition.png)
+
+
+# les selecteurs
+
+* annimation
+![](http://devfiles.myopera.com/articles/9132/basic-spinner.html)
+* pair/impair
+![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-nth-child-table.png)
+
+    ````table tr:nth-child(odd){````
+
+    ````  background-color:#EEF;````
+
+    ````}````
+
+    ````table tr:nth-child(2n + 1){````
+
+    ````  background-color:#EEF;````
+
+    ````}````
+
+# les selecteurs
+
+* par la valeur d’un de leurs attributs
+
+  a[href^="http://"]{
+  
+    color:red;
+    
+  }
+  
+* Exclusion d’éléments
+
+  a:not(.notme){
+
+    color:green;
+
+  }
+
+# les selecteurs
+
+* Les media queries
+  
+  @media screen and (max-device-width: 600px) {
+   
+  /*
+  
+  Style appliqué uniquement sur les écrans de moins de 600px de largeur
+  
+  */
+   
+  body{
+    background-color:red;
+  }
+   
+  }
+  
+# viewport
+
+![](http://devfiles.myopera.com/articles/5082/viewport_device-width.jpg)
+
+# Les colonnes
+  p{
+    column-count:2;
+  }
+passe de
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-columns-1.png)
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-columns-2.png)
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-columns-3.png)
+
+# Les transformations
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-3d-transform.jpg)
+
+# Les rotations
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-transform.png)
+
+# Les transformations
+
+* Les translations
+* Les changements d’échelle
+* Matrice
+
+[exemple sur un jeux de plateaux](http://magneval.github.io/jeuxPlateauHTML5/)
+
+# La perspective
+
+![](http://www.html5-css3.fr/wp-content/uploads/2011/11/transformation-3D-CSS3-perspective.png)
+
+# Les dégradés de couleurs
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/10/d%C3%A9grad%C3%A9s-couleurs-css3-gradient.png)
+
+# lineaire
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/10/internet-explorer-gradient-css3-0.png)
++ ![](gradient-diagram.png)
+
+# circulaires
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/10/css3-radial-gradient.png)
+
+# les polices de caractères
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-font-face.png)
+
+# Les évolutions de Javascript lié a HTML5
+
+* [classlist](http://html5demos.com/classlist)
+* [dataset](http://html5demos.com/dataset)
+* [history](http://html5demos.com/history)
+* canvas
+    * 2D
+    * [3D](http://dev.opera.com/articles/view/an-introduction-to-webgl/)
+    
+# geolocalisation
+
++ ![](http://www.html5-css3.fr/wp-content/uploads/2011/01/barre-autorisation-partage-g%C3%A9olocalisation.png)
+
+# application offline
+
+* [offline](http://html5demos.com/offline)
+* [storage](http://html5demos.com/storage)
+
+* local Storage
+
+ localStorage.setItem("name", "John");   
+ 
+ alert(localStorage.getItem("name"));
+ 
+* session Storage
+* SQL Storage
+* [application cache](http://html5demos.com/offlineapp)
+
+# Les Web Sockets
+
++ [web-socket](http://html5demos.com/web-socket)
+
+# La webcam
+
++ [headtracker](http://auduno.github.com/headtrackr/examples/targets.html)
+
+# accelerometre
+
+* deviceorientation
+* devicemotion
+
+# DragNDrop
+
++ [dnd-upload](http://html5demos.com/dnd-upload)
++ [drag](http://html5demos.com/drag)
++ [drag-anything](http://html5demos.com/drag-anything)
+
+# FileReader
+
++ [file-api-simple](http://html5demos.com/file-api-simple)
+
+# il en faut encore ?
+
+* [postMessage](http://html5demo.braincracking.org/demo/postMessage.php)
+* worker  
+* [Server-Sent Events](http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_sse)
+
+# Le point sur le support d' HTML5 par les différents navigateurs
+
+![](http://www.html5-css3.fr/wp-content/uploads/2011/01/findmebyip-html5-css3.jpg "comparatif")
+
+# Question réponse
+
++ ![](../images/HTML5.png "HTML5")
++ [http://html5demos.com/](http://html5demos.com/)
++ [Comparaison des moteurs](http://en.wikipedia.org/wiki/Comparison_of_layout_engines_(HTML_5))
++ [verification des fonctionnalitées](http://caniuse.com/)
++ des questions ?

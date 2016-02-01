@@ -1,0 +1,93 @@
+= CSS3
+* Les effets visuels
+** Les bordures arrondies
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-border-radius.png 
+** box-shadow
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-box-shadow.png
+** text-shadow
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-text-shadow.jpg
+** opacity
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-opacity1.png
+** transition
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-transition.png
+
+[http://dev.opera.com/static/dstorey/transitions/color-transition.html]
+
+[http://devfiles.myopera.com/articles/1041/image-gallery.html]
+
+* les selecteurs
+** annimation
+[http://devfiles.myopera.com/articles/9132/basic-spinner.html]
+** pair/impair
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-nth-child-table.png
+  table tr:nth-child(odd){
+    background-color:#EEF;
+  }
+ou
+  table tr:nth-child(2n + 1){
+    background-color:#EEF;
+  }
+** par la valeur d’un de leurs attributs
+  a[href^="http://"]{
+    color:red;
+  }
+** Exclusion d’éléments
+  a:not(.notme){
+    color:green;
+  }
+* Les media queries
+  @media screen and (max-device-width: 600px) {
+   
+  /* Style appliqué uniquement sur les écrans de moins de 600px de largeur */
+   
+  body{
+    background-color:red;
+  }
+   
+  }
+* viewport
+[http://dev.opera.com/articles/view/the-mobile-web-optimization-guide/]
+* Les colonnes
+  p{
+    column-count:2;
+  }
+passe de
+
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-columns-1.png
+
+a
+
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-columns-2.png
+
+ou
+
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-columns-3.png
+
+[http://people.opera.com/cmills/multi-col/multi-columns3b.html]
+
+[http://jsfiddle.net/nimbu/UprmV/]
+
+[http://people.opera.com/zibin/multicol/index.html]
+* Les transformations
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-3d-transform.jpg
+** Les rotations
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-transform.png
+** Les translations
+** Les changements d’échelle
+** Matrice
+** Perspective
+http://www.html5-css3.fr/wp-content/uploads/2011/11/transformation-3D-CSS3-perspective.png
+
+* Les dégradés de couleurs
+http://www.html5-css3.fr/wp-content/uploads/2011/10/d%C3%A9grad%C3%A9s-couleurs-css3-gradient.png
+** lineaire
+http://www.html5-css3.fr/wp-content/uploads/2011/10/internet-explorer-gradient-css3-0.png
+
+http://dev.w3.org/csswg/css3-images/gradient-diagram.png
+** circulaires
+http://www.html5-css3.fr/wp-content/uploads/2011/10/css3-radial-gradient.png
+* les polices de caractères
+http://www.html5-css3.fr/wp-content/uploads/2011/01/css3-font-face.png
+
+
+
