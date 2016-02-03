@@ -1,1 +1,64 @@
-/home/charles/Documents/Oevo/Formation/HTML5/tags.txt
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-09-11T15:37:35+02:00
+
+====== tags ======
+
+* Le doctype est simplifié :
+  <!DOCTYPE html>
+* organisatin du flux :
+ * section
+ * aside
+ * nav
+ * article
+ * header
+ * footer
+ * figure
+ * img
+ * figcaption
+* nouvelles balises
+ * <embed>
+ * <mark>
+ * <meter>
+ * <progress>
+ * <time>
+ * <command>
+ * <details>
+ * <datalist>
+ * <keygen>
+ * <bb>
+ * <output>
+ * <ruby> (Text asiatique)
+ * <datatemplate>
+ * <rule>
+ * <nest>
+ * <summary>
+ * <details>
+* évolution des formulaires
+ * datetime
+ * datetime-local
+ * date
+ * month 
+ * week
+ * time
+ * number
+ * tel
+ * range
+ * email
+ * url
+ * search
+ * color
+* attributs
+ * draggable
+ 
+ 
+ * contenteditable
+ 
+ * spellcheck
+ * microformat
+ * microdata
+ * datas
+* Multimedia
+ * audio
+ * video
+* canvas
