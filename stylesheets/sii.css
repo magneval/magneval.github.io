@@ -1,0 +1,199 @@
+html {
+  background-color: black;
+}
+
+body {
+  background-color: white;
+  border-radius: 12px
+}
+
+/* A section is a slide. It's size is 800x600, and this will never change */
+section {
+  font-family: Arial, serif;
+  font-size: 20pt;
+}
+
+address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul, dl {
+  padding: 10px 20px 10px 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 10pt 10pt 20pt 10pt;
+}
+
+ul, ol {
+  margin: 10px 10px 10px 50px;
+}
+
+section.titleslide h1 {
+  margin-top: 200px;
+}
+
+h1.title {
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 180%;
+    border-radius: 1em; 
+    -o-border-radius: 1em; 
+    -moz-border-radius: 1em; 
+    -webkit-border-radius: 1em; 
+    border: buttonshadow groove medium;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 100%;
+}
+
+q {
+  quotes: "â€œ" "â€�" "â€˜" "â€™";
+}
+
+blockquote {
+  font-style: italic;
+}
+
+/* Figures are displayed full-page, with the caption on
+top of the image/video */
+figure {
+  background-color: black;
+}
+
+figcaption {
+  margin: 70px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  text-align: right;
+  background-color: #F3F4F8;
+  border-top: 1px solid #CCC;
+}
+
+/* Transition effect */
+/* Feel free to change the transition effect for original
+animations. See here:
+https://developer.mozilla.org/en/CSS/CSS_transitions
+How to use CSS3 Transitions: */
+section {
+  -moz-transition: left 400ms linear 0s;
+  -webkit-transition: left 400ms linear 0s;
+  -ms-transition: left 400ms linear 0s;
+  -o-transition: left 400ms linear 0s;
+  transition: left 400ms linear 0s;
+}
+
+/* Before */
+section {
+  left: -150%;
+}
+
+/* Now */
+section[aria-selected] {
+  left: 0;
+}
+
+/* After */
+section[aria-selected] ~ section {
+  left: +150%;
+}
+
+/* Incremental elements */
+
+/* By default, visible */
+.incremental > * {
+  opacity: 1;
+}
+
+/* The current item */
+.incremental > *[aria-selected] {
+  color: red; opacity: 1;
+}
+
+/* The items to-be-selected */
+.incremental > *[aria-selected] ~ * {
+  opacity: 0.2;
+}
+
+img {
+  background-color: white;
+}
+
+#le-cloud img {
+  height: 90%;
+  width: 100%;
+}
+
+#le-cloud-2, 
+#avez-vous-des-questions  {
+  background-color: white;
+}
+
+#avez-vous-des-questions figure {
+  background-color: white;
+}
+
+#le-cloud-2  img,
+#avez-vous-des-questions  img {
+  padding-left:5%;  
+  padding-right:5%;  
+  padding-bottom:2%;  
+  height: 80%;
+  width: 90%;
+}
+
+#agnosticité-du-code-1 {
+  text-align: center;
+}
+
+#agnosticité-du-code-1  img {
+  text-align: center;
+  padding-left:20%;  
+  padding-right:20%;  
+  padding-bottom:20%;  
+  height: 60%;
+  width: 60%;
+}
+
+section:not(.slide) {
+  background-image: url(../images/LogoSII.gif);
+  background-repeat: no-repeat;
+  background-position: 30% 60%;
+}
+
+section.slide {
+  background-image: url(../images/LogoSII.gif);
+  background-position-x: 20px;
+  background-position-y: 15px;
+  background-repeat: no-repeat;
+}
+
+section.slide h1 {
+  background-image: url(../images/AngularJS-small.png);
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+#questionréponses figure {
+  background-color: inherit;
+}
+
+
+#questionréponses img {
+  width: initial;
+  height: initial;
+  position: relative;
+  left: 30%;
+}
+
