@@ -1,1 +1,42 @@
 target
+/MigrationAngular/exemples/Angular2/nbproject/private/
+*~
+*.swp
+*.DS_Store
+*.bak
+
+exemples/styles/bootstrap
+exemples/styles/compass_twitter_bootstrap.css
+exemples/styles/compass_twitter_bootstrap.css.map
+exemples/styles/compass_twitter_bootstrap.scss
+exemples/styles/main.css
+exemples/styles/main.css.map
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+tmp
+dist
+
+# dependencies
+node_modules
+bower_components
+
+# IDEs and editors
+.idea
+nbproject
+
+# misc
+.sass-cache
+connect.lock
+coverage/*
+libpeerconnection.log
+npm-debug.log
+testem.log
+typings
+
+# e2e
+e2e/*.js
+e2e/*.map
+

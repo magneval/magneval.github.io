@@ -1,0 +1,44 @@
+<table>
+  <tr>
+      <th>
+        id
+      </th>
+      <th>
+        libelle
+      </th>
+      <th>
+        prix unitaire
+      </th>
+      <th>
+        quantite
+      </th>
+      <th>
+        prix total
+      </th>
+  </tr>
+  <tr
+    *ngFor="#ligne of lignes"
+    [class.selected]="ligne === selectedLigne"
+    (click)="onSelect(ligne)"
+    (keyup.enter)="edit(ligne)"
+    >
+    <!--
+    (dblclick)="edit(ligne)"
+    -->
+      <td>
+        {{ligne.id}}
+      </td>
+      <td>
+        {{ligne.libelle}}
+      </td>
+      <td>
+        {{ligne.prixUnitaire}}
+      </td>
+      <td>
+        {{ligne.quantite}}
+      </td>
+      <td>
+        {{ligne.prixTotal}}
+      </td>
+  </tr>
+</table>

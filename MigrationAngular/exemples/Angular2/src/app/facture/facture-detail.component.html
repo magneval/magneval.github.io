@@ -1,0 +1,21 @@
+<div *ngIf="facture">
+  <adresse [adresse]="facture.adresse">
+  </adresse>
+  <h3>"{{editName}}"</h3>
+  <div>
+    <label>Id:</label>
+    {{facture.id}}
+  </div>
+  <!--client [client]="facture.client">
+  constructor problem
+  </client-->
+  <div>
+    <label>Name:</label>
+    <input [(ngModel)]="editName" placeholder="name"/>
+  </div>
+  <div>
+    <ligne-list [lignes]="facture.lignes">pas de lignes</ligne-list>
+  </div>
+  <button (click)="save()">Save</button>
+  <button (click)="cancel()">Cancel</button>
+</div>

@@ -1,0 +1,49 @@
+{
+  "data" : [
+    {
+      "id" : 1,
+      "name" : "001234-03/20016",
+      "client" : {
+        "id":1,
+        "name":"LeCient1"
+      },
+      "adresse":{
+        "nom": "Livraison",
+        "numero": 0,
+        "rue": "impasse pair et manque",
+        "codePostal": 999999,
+        "ville": "Nowhere"
+      },
+      "lignes" : [
+        {
+          "id":1,
+          "libelle":"Premier article",
+          "prixUnitaire":10,
+          "quantite":5,
+          "prixTotal":50
+        },
+        {
+          "id":2,
+          "libelle":"Deuxième article",
+          "prixUnitaire":5,
+          "quantite":10,
+          "prixTotal":50
+        },
+        {
+          "id":3,
+          "libelle":"Troisième article",
+          "prixUnitaire":10,
+          "quantite":1,
+          "prixTotal":10
+        },
+        {
+          "id":4,
+          "libelle":"Quatrième article",
+          "prixUnitaire":50,
+          "quantite":5,
+          "prixTotal":250
+        }
+      ]
+    }
+  ]
+}

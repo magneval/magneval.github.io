@@ -21,11 +21,11 @@ angular.module('Cours')
     }
 
     $scope.save = function() {
-      $scope.framework.id="-";
       if($scope.framework.$save) {
         $scope.framework.$save();
       } else {
         $scope.frameworks.push(Frameworks.save($scope.framework));
+        $scope.framework._id="-";
       }
       modal.modal('hide');
     }

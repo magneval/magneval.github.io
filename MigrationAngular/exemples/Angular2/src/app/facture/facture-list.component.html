@@ -1,0 +1,12 @@
+<h2>Facture List</h2>
+
+<ul>
+  <li *ngFor="#facture of factures">
+    <a
+      [routerLink]="['FactureDetail', { id: facture.id }]">
+      <strong>{{facture.id}}</strong>
+      -
+      {{facture.name}}
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,12 @@
+version: '2'
+services:
+    app:
+        image: magneval/angular-cli
+        user: 1000:1000
+        command: serve
+        ports:
+        - 4200:4200
+        - 49152:49152
+        volumes:
+        - ./:/src
+

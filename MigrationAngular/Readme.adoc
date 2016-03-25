@@ -1,5 +1,7 @@
 :revealjs_mouseWheel: true
 :revealjs_history: true
+:revealjs_hideAddressBar: true
+
 = Angular 101 ou 1TO2
 Charles de MAGNEVAL <charles.de_magneval@open-groupe.com>
 v1.0, 2016-01-10
@@ -161,7 +163,11 @@ Angular2 peut iaussi tourner sur ES5 ou Dart
 * 2009 ECMAScript 5
 * 2012 TypeScript
 * 2015 ECMAScript 6 Harmony
-* WIP ECMAScript 7 
+
+[NOTE.speaker]
+--
+WIP ECMAScript 7 
+--
 
 === ES 6 ou ES2015
 
@@ -201,7 +207,8 @@ TypeScript est une extention d'ES6 avec les éléments suivants en plus :
 [%step]
 * Les interaces
 * Les classes abstraites
-* le typage fort
+* Le typage fort
+* La gestion de portée
 * Les énumérations
 * Les génériques
 * Les espaces de nommages
@@ -211,6 +218,7 @@ TypeScript est une extention d'ES6 avec les éléments suivants en plus :
 [NOTE.speaker]
 --
 le typage fort, c'est que les varialbles et les paramètres sont typés
+Pour simplifier, TypeScript c'est Javascript + types 
 --
 
 == Angular JS 2
@@ -222,20 +230,37 @@ Angular 2 c'est une évolution d'angular 1 pour améliorer les points suivants :
 . rapidité
 . support des mobiles
 . fléxibilité 
+. le SEO (Search Engine Optimisation)
 
-Mais :
+=== Mais :
+
 [%step]
 * RIP JqLite
 * RIP angular.module
 * RIP Les controlleurs
 * RIP Les scopes
 * RIP Les directives definition object
+* RIP dual way data binding
 
 [NOTE.speaker]
 --
-fléxibilité = # language de programation
-possibilité backend reactive
-RIP Angular 1
+* fléxibilité = # language de programation
+* possibilité backend reactive
+* RIP Angular 1
+--
+
+=== Angular JS 2
+components, Components, COMPONENTS !!!
+
+[%step]
+* componsant = réutilisabilité
+* web components
+* Utilisation des décorateurs (annotation)
+[%step]
+
+--
+un componsant = HTML templates + CSS + Script
+! besoin de referencer les sous componsants 
 --
 
 === Angular JS 2
@@ -247,10 +272,34 @@ L'utilisation de language a base de classe simplifie le code :
 * Dart
 * ES6
 * ES5
+
+[NOTE.speaker]
+--
 La gestion de modules simplifie grandement les liens entres les briques applicatives
+--
 
 === Angular JS 2
-Les controlleurs
+Les controlleurs sont remplacés par des POTOs ou POEOs
+
+[NOTE.speaker]
+--
+--
+
+=== Angular JS 2
+Les scopes
+
+[NOTE.speaker]
+--
+La suppression du $scope est largement remplacer par l'utilisation d'objets dont la porté est définis par une classe.
+--
+
+=== Angular JS 2
+Les templates
+
+* <>
+* []
+* ()
+
 
 [NOTE.speaker]
 --

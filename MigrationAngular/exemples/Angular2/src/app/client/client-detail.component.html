@@ -1,0 +1,19 @@
+<div *ngIf="client">
+  <adresse [adresse]="client.adresse">
+  </adresse>
+  <h3>"{{editName}}"</h3>
+  <div>
+    <label>Id:</label>
+    {{client.id}}
+  </div>
+  <div>
+    <client>
+    </client>
+  </div>
+  <div>
+    <label>Name:</label>
+    <input [(ngModel)]="editName" placeholder="name"/>
+  </div>
+  <button (click)="save()">Save</button>
+  <button (click)="cancel()">Cancel</button>
+</div>
