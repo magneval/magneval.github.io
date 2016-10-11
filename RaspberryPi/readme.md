@@ -9,4 +9,4 @@ see :
 
 
 The portablePiZero is define by these elements :
-http://uml.mvnsearch.org/github/magneval/magneval.github.io/master/RaspberryPi/src/main/uml/portablePiZero.puml
+![deployment Diagram](http://uml.mvnsearch.org/github/magneval/magneval.github.io/master/RaspberryPi/src/main/uml/portablePiZero.puml)
